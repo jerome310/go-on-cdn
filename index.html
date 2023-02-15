@@ -1,13 +1,530 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Go On CDN</title>
+    <title>Go On</title>
+    <!-- Alpine Script -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- Tailwind Link -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-    <h1 class="text-green-100">Hello World</h1>
+    <!-- Navbar Section -->
+    <nav class="bg-[#161635] py-7 fixed w-full z-40">
+        <div class="flex items-center justify-between w-10/12 m-auto">
+            <div class="flex text-white">
+                <svg fill="white" preserveAspectRatio="xMidYMid meet" data-bbox="22.5 21.989 155 154.879"
+                    viewBox="22.5 21.989 155 154.879" height="25" width="25" xmlns="http://www.w3.org/2000/svg"
+                    data-type="shape" role="img" aria-labelledby="svgcid--1rz219au5y0d">
+                    <title id="svgcid--1rz219au5y0d">Homepage</title>
+                    <g>
+                        <path
+                            d="M76.4 44.9c3.8-.7 7.6 1.2 9.3 4.6.4.6.7 1.3 1 2 1.1 16.3 2.2 32.2 3.2 48.2 0 1.7.2 3.3.8 4.9 1.3 3.1 4.4 5.1 7.8 4.9l51.6-3.3.4.1.9.1c1.9.2 3.6 1.1 4.9 2.4 1.5 1.6 2.4 3.7 2.3 5.8-2 29.6-23.8 54.4-53.3 60.7-29.6 6.4-59.8-7.2-74.4-33.2-4.3-7.5-7-15.8-7.9-24.3-.4-2.5-.5-5.1-.5-7.6.1-31.4 22.5-58.6 53.9-65.3zM107.1 22c35.4 1.1 65 26.8 70.4 61.1v1.6c-.1 1.3-.6 2.5-1.5 3.5-1.1 1.2-2.6 2-4.3 2.1l-59.5 3.9h-1c-1.6-.1-3.2-.7-4.4-1.8-1.5-1.3-2.3-3.2-2.3-5.1l-4-58.5v-1c.1-1.6.8-3.2 2-4.3 1.3-1 2.9-1.6 4.6-1.5z">
+                        </path>
+                    </g>
+                </svg>
+                <span>
+                    <p class="pl-1.5 text-xl font-light">Go On</p>
+                </span>
+            </div>
+            <div class="text-white font-extralight">
+                <a href="#" class="transition ease-in-out duration-500 pl-7 hover:text-[#ACD1D6]">Home</a>
+                <a href="#" class="transition ease-in-out duration-500 pl-7 hover:text-[#ACD1D6]">The App</a>
+                <a href="#" class="transition ease-in-out duration-500 pl-7 hover:text-[#ACD1D6]">Features</a>
+                <a href="#" class="transition ease-in-out duration-500 pl-7 hover:text-[#ACD1D6]">About Us</a>
+                <a href="#" class="transition ease-in-out duration-500 pl-7 hover:text-[#ACD1D6]">Reviews</a>
+                <a href="#" class="transition ease-in-out duration-500 pl-7 hover:text-[#ACD1D6]">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar Section -->
+    <!-- Hero section -->
+    <header style="background: rgb(51,8,103);
+background: linear-gradient(167deg, rgba(51,8,103,1) 35%, rgba(48,207,208,1) 100%);">
+        <div class="flex justify-between pt-[15%] pb-24 mb-[5%] w-[75%] m-auto">
+            <!-- Left hero side section -->
+            <div>
+                <div class="pt-[35px]">
+                    <h1 class="text-white text-[65px] leading-tight">Discover New Possibilities</h1>
+                    <p class="pb-4 text-2xl font-thin text-white pt-7">Try it yourself. Download now.</p>
+                </div>
+                <div class="flex">
+                    <img class="w-[137px] h-[41px] rounded-md mr-2.5" src="/images/apple_store_img.jpg"
+                        alt="apple store">
+                    <img class="w-[140px] h-[41px] rounded-md ml-2.5" src="/images/android_store_img.jpg"
+                        alt="android store">
+                </div>
+            </div>
+            <!-- Left hero side section -->
+            <!-- Right hero side section -->
+            <div class="relative flex bg-yellow-500">
+                <div class="bg-transparent">
+                    <img class="w-[462px] h-[666px] border-[12px] border-black" src="/images/ipad mockup.jpg"
+                        alt="Go On tablet hero image">
+                </div>
+                <!-- <img src="" alt=""> -->
+                <img class="absolute w-[231px] h-[501px] left-[-80px] top-[200px] border-[12px] border-black rounded-3xl"
+                    src="/images/phone mockup.jpg" alt="Go On phone hero image">
+                <!-- <img src="" alt=""> -->
+            </div>
+            <!-- Right hero side section -->
+        </div>
+    </header>
+    <!-- Hero section -->
+    <!-- Reinventing Mobile Technology -->
+    <div class="flex justify-between w-3/4 m-auto mb-[5%]">
+        <div class="w-2/5">
+            <h1 class="text-[50px]">Reinventing Mobile Technology</h1>
+        </div>
+        <div class="w-2/5 font-thin">
+            <h2 class="text-[25px] w-3/5">Join more than a million of happy users</h2>
+            <p class="w-5/6 pt-5 pb-10">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just
+                click “Edit Text” or double click me to
+                add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on
+                your page. I’m a
+                great place for you to tell a story and let your users know a little more about you.</p>
+            <a href="/"
+                class="border border-black px-5 py-2 rounded-md transition ease-in-out duration-300 hover:text-white hover:bg-[#3A8088] hover:border-[#3A8088]">Download
+                the app</a>
+        </div>
+    </div>
+    <!-- Reinventing Mobile Technology -->
+    <!-- Features -->
+    <div class="relative">
+        <div>
+            <img class="w-full" src="/images/feature_background.jpg" alt="">
+        </div>
+        <div class="w-[70%] m-auto">
+            <div class="pt-[100px] absolute top-0">
+                <h1 class="text-[40px] text-white pb-2.5">Features</h1>
+                <p class="font-thin text-white">I'm a title. Click here to add your own text and edit me.</p>
+            </div>
+            <!-- Features Container -->
+            <div class="absolute flex justify-around w-4/5 top-2/4">
+                <!-- Feature 1st Section -->
+                <div class="mr-6">
+                    <svg preserveAspectRatio="none" data-bbox="30.408 36.4 139.185 127.378"
+                        viewBox="30.408 36.4 139.185 127.378" height="25" width="25" xmlns="http://www.w3.org/2000/svg"
+                        data-type="shape" role="presentation" aria-hidden="true" aria-labelledby="svgcid-l8guul-6i9kb8"
+                        fill="white">
+                        <title id="svgcid-l8guul-6i9kb8"></title>
+                        <g>
+                            <path
+                                d="M105.8 39.7c-2.6-4.4-9-4.4-11.6 0L76.1 71c-1.3 2.2-3.5 3.7-6 4.1l-34 5.1c-5.7.9-7.7 8.1-3.3 11.8l25.3 21c2.3 1.9 3.4 5 2.9 8l-6.6 34.8c-1 5.5 4.7 9.8 9.7 7.2l32-16.8c2.4-1.3 5.3-1.3 7.8 0l32 16.8c5 2.6 10.7-1.7 9.7-7.2L139 121c-.6-3 .5-6.1 2.9-8l25.3-21c4.4-3.7 2.4-10.9-3.3-11.8l-34-5.1c-2.5-.4-4.7-1.9-6-4.1l-18.1-31.3z">
+                            </path>
+                        </g>
+                    </svg>
+                    <h2 class="text-white text-[25px] font-thin w-[70%] py-[25px]">High Speed Performance</h2>
+                    <p class="font-thin text-white pr-[30px]">I'm a paragraph. Click here to add your own text and edit
+                        me. It’s easy. Just click “Edit Text” or double click me to add your own content and make
+                        changes to the font.</p>
+                </div>
+                <!-- Feature 1st Section -->
+                <!-- Feature 2nd Section -->
+                <div class="mx-6">
+                    <svg preserveAspectRatio="none" data-bbox="34.4 26 131.6 140.9" viewBox="34.4 26 131.6 140.9"
+                        height="25" width="25" xmlns="http://www.w3.org/2000/svg" data-type="shape" role="presentation"
+                        aria-hidden="true" aria-labelledby="svgcid-rfa66w-baylml">
+                        <title id="svgcid-rfa66w-baylml"></title>
+                        <g>
+                            <path
+                                d="M105.5 89.2c15-2.5 26.5-15.6 26.5-31.4 0-17.6-14.2-31.8-31.8-31.8S68.4 40.3 68.4 57.9c0 15.8 11.5 28.8 26.5 31.4C61 92 34.4 119.5 34.4 140c0 21.5 29.5 26.9 65.8 26.9 36.4 0 65.8-5.4 65.8-26.9 0-20.6-26.7-48.1-60.5-50.8z"
+                                fill="white" data-color="1"></path>
+                        </g>
+                    </svg>
+                    <h2 class="text-white text-[25px] font-thin w-[55%] py-[25px]">24/7 Online
+                        Support</h2>
+                    <p class="font-thin text-white pr-[30px]">I'm a paragraph. Click here to add your own text and edit
+                        me. It’s easy. Just click “Edit Text” or double click me to add your own content and make
+                        changes to the font.</p>
+                </div>
+                <!-- Feature 2nd Section -->
+                <!-- Feature 3rd Section -->
+                <div class="ml-6">
+                    <svg preserveAspectRatio="xMidYMid meet" data-bbox="45.175 27.575 109.45 144.775"
+                        viewBox="45.175 27.575 109.45 144.775" height="25" width="25" xmlns="http://www.w3.org/2000/svg"
+                        data-type="shape" role="presentation" aria-hidden="true" aria-labelledby="svgcid--7ivipd-1hyu82"
+                        fill="white">
+                        <title id="svgcid--7ivipd-1hyu82"></title>
+                        <g>
+                            <path
+                                d="M64.4 69.2 67 92.6l-5.3.4c-7.3.6-13.3 6.1-14.5 13.4-2.7 16.8-2.7 33.8 0 50.6 1.2 7.3 7.2 12.8 14.5 13.4l11.3.9c17.9 1.4 35.9 1.4 53.8 0l11.3-.9c7.3-.6 13.3-6.1 14.5-13.4 2.7-16.8 2.7-33.8 0-50.6-1.2-7.3-7.2-12.8-14.5-13.4l-5.3-.4 2.6-23.4c.3-2.8.3-5.5 0-8.3l-.2-1.6c-1.8-16.5-14.8-29.5-31.3-31.5-2.8-.3-5.6-.3-8.3 0-16.5 1.9-29.4 15-31.3 31.5l-.2 1.6c0 2.8 0 5.5.3 8.3zm38.4-30c-1.9-.2-3.8-.2-5.7 0-11.2 1.3-20 10.2-21.3 21.4l-.2 1.6c-.2 1.9-.2 3.9 0 5.8l2.6 23.8c14.4-.9 28.9-.9 43.3 0l2.6-23.8c.2-1.9.2-3.9 0-5.8l-.2-1.6c-1-11.2-9.9-20.1-21.1-21.4zm-2.8 81.1c-6.3 0-11.4 5.1-11.4 11.4 0 6.3 5.1 11.4 11.4 11.4 6.3 0 11.4-5.1 11.4-11.4 0-6.3-5.1-11.4-11.4-11.4z"
+                                fill-rule="evenodd" clip-rule="evenodd"></path>
+                        </g>
+                    </svg>
+                    <h2 class="text-white text-[25px] font-thin w-[70%] py-[25px]">High Speed Performance</h2>
+                    <p class="font-thin text-white pr-[30px]">I'm a paragraph. Click here to add your own text and edit
+                        me. It’s easy. Just click “Edit Text” or double click me to add your own content and make
+                        changes to the font.</p>
+                </div>
+                <!-- Feature 3rd Section -->
+            </div>
+            <!-- Features Container -->
+        </div>
+    </div>
+    <!-- Features -->
+    <!-- App Works Section -->
+    <div class="mt-[50px] mb-[75px]">
+        <div class="w-[70%] m-auto flex">
+            <div>
+                <h1 class="text-[45px]">How the App Works</h1>
+                <p class="pt-10 text-lg font-thin">/01</p>
+                <h2 class="text-[25px] font-thin w-1/5 py-4">Personalized Experience</h2>
+                <p class="font-thin w-[30%]">I'm a paragraph. Click here to add your own text and edit me. It’s easy.
+                    Just click “Edit Text” or double click me to add your own content and make changes to the font.</p>
+            </div>
+            <div>
+                <img class="w-[420px] h-[583px] rounded-3xl border-[12px] border-black"
+                    src="/images/phone_mockup_two.jpg" alt="phone phone mockup two">
+            </div>
+        </div>
+
+        <div class="mt-[10%] w-[70%] m-auto flex justify-between">
+            <div class="w-[100%]">
+                <img class="w-[565px] h-[262px] rounded-3xl border-[12px] border-black" src="/images/tablet_two.jpg"
+                    alt="tablet mockup design">
+            </div>
+            <div class="w-[30%]">
+                <p class="text-lg font-thin">/02</p>
+                <h2 class="text-[25px] font-thin w-3/5 py-4">Cloud Based
+                    Technology</h2>
+                <p class="font-thin">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click
+                    “Edit Text” or double click me to add your own content and make changes to the font.</p>
+            </div>
+        </div>
+    </div>
+    <!-- App Works Section -->
+    <!-- Our Story -->
+    <div class="relative">
+        <div>
+            <img class="w-full h-[450px]" src="/images/feature_background.jpg" alt="">
+        </div>
+        <div class="w-full pt-[100px] absolute top-0 flex justify-center">
+            <div class="w-full text-center">
+                <h1 class="text-5xl font-light text-white">Our Story</h1>
+            </div>
+            <div class="w-full text-center">
+                <h1 class="text-left text-[28px] text-white w-[45%] m-auto font-light pb-[30px] pr-20">Led by the belief
+                    that anyone can grow</h1>
+                <p class="text-left w-[45%] m-auto text-white font-thin text-base">I'm a paragraph. Click here to add
+                    your own text and edit me. It’s easy. Just click “Edit Text” or double click me to
+                    add your own content and make changes to the font. Feel free to drag and drop me anywhere you like
+                    on your page. I’m a
+                    great place for you to tell a story and let your users know a little more about you.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Our Story -->
+    <!-- Satisfied Customers -->
+    <div class="m-auto my-20">
+        <h1 class="pl-[18%] text-5xl w-1/4 pb-[75px] leading-normal">Satisfied Customers</h1>
+        <div class="flex justify-between w-[65%] m-auto">
+            <!-- First Card -->
+            <div class="w-[25%]">
+                <div class="shadow-[0_8px_24px_rgba(149,157,165,0.2)] w-[325px] h-[300px] rounded-3xl">
+                    <svg preserveAspectRatio="xMidYMid meet" data-bbox="20.799 31.376 158.401 137.248"
+                        xmlns="http://www.w3.org/2000/svg" width="55" height="70"
+                        viewBox="20.799 31.376 158.401 137.248" data-type="color" role="presentation" aria-hidden="true"
+                        aria-labelledby="svgcid-k6ng8p-7xm5gu" style="padding-left: 30px;">
+                        <g>
+                            <path fill="#3A8088"
+                                d="M65.565 104.673c6.559 2.296 11.642 6.067 15.25 11.315 3.607 5.247 5.411 11.642 5.411 19.185 0 9.838-3.115 17.873-9.347 24.105-6.231 6.23-13.938 9.346-23.121 9.346-9.511 0-17.381-3.197-23.612-9.592-6.231-6.396-9.347-14.349-9.347-23.859 0-4.592.574-9.265 1.722-14.02 1.148-4.756 3.526-11.724 7.133-20.907l23.12-68.87h30.991l-18.2 73.297zm92.974 0c6.559 2.296 11.642 6.067 15.25 11.315 3.607 5.247 5.411 11.642 5.411 19.185 0 9.838-3.115 17.873-9.346 24.105-6.231 6.23-13.938 9.346-23.121 9.346-9.511 0-17.381-3.197-23.612-9.592-6.231-6.396-9.347-14.349-9.347-23.859 0-4.592.574-9.265 1.722-14.02 1.148-4.756 3.526-11.724 7.133-20.907l23.121-68.87h30.991l-18.202 73.297z"
+                                data-color="1"></path>
+                        </g>
+                    </svg>
+                    <p class="font-thin text-left px-[35px]">
+                        “I'm a testimonial. Click to edit me and add text that says something nice about you and your
+                        services.”
+                    </p>
+                    <h3 class="font-semibold pl-[35px] pt-[80px]">Joan Marks</h3>
+                    <div class="flex">
+                        <svg preserveAspectRatio="none" data-bbox="30.408 36.4 139.185 127.378"
+                            viewBox="30.408 36.4 139.185 127.378" height="15" width="15"
+                            xmlns="http://www.w3.org/2000/svg" data-type="shape" role="presentation" aria-hidden="true"
+                            aria-labelledby="svgcid-uxckxg4wd2xo" style="margin: 10px 0 0 31px;">
+                            <title id="svgcid-uxckxg4wd2xo"></title>
+                            <g>
+                                <path fill="#3A8088"
+                                    d="M105.8 39.7c-2.6-4.4-9-4.4-11.6 0L76.1 71c-1.3 2.2-3.5 3.7-6 4.1l-34 5.1c-5.7.9-7.7 8.1-3.3 11.8l25.3 21c2.3 1.9 3.4 5 2.9 8l-6.6 34.8c-1 5.5 4.7 9.8 9.7 7.2l32-16.8c2.4-1.3 5.3-1.3 7.8 0l32 16.8c5 2.6 10.7-1.7 9.7-7.2L139 121c-.6-3 .5-6.1 2.9-8l25.3-21c4.4-3.7 2.4-10.9-3.3-11.8l-34-5.1c-2.5-.4-4.7-1.9-6-4.1l-18.1-31.3z">
+                                </path>
+                            </g>
+                        </svg>
+                        <svg preserveAspectRatio="none" data-bbox="30.408 36.4 139.185 127.378"
+                            viewBox="30.408 36.4 139.185 127.378" height="15" width="15"
+                            xmlns="http://www.w3.org/2000/svg" data-type="shape" role="presentation" aria-hidden="true"
+                            aria-labelledby="svgcid-uxckxg4wd2xo" style="margin: 10px 0 0 10px;">
+                            <title id="svgcid-uxckxg4wd2xo"></title>
+                            <g>
+                                <path fill="#3A8088"
+                                    d="M105.8 39.7c-2.6-4.4-9-4.4-11.6 0L76.1 71c-1.3 2.2-3.5 3.7-6 4.1l-34 5.1c-5.7.9-7.7 8.1-3.3 11.8l25.3 21c2.3 1.9 3.4 5 2.9 8l-6.6 34.8c-1 5.5 4.7 9.8 9.7 7.2l32-16.8c2.4-1.3 5.3-1.3 7.8 0l32 16.8c5 2.6 10.7-1.7 9.7-7.2L139 121c-.6-3 .5-6.1 2.9-8l25.3-21c4.4-3.7 2.4-10.9-3.3-11.8l-34-5.1c-2.5-.4-4.7-1.9-6-4.1l-18.1-31.3z">
+                                </path>
+                            </g>
+                        </svg>
+                        <svg preserveAspectRatio="none" data-bbox="30.408 36.4 139.185 127.378"
+                            viewBox="30.408 36.4 139.185 127.378" height="15" width="15"
+                            xmlns="http://www.w3.org/2000/svg" data-type="shape" role="presentation" aria-hidden="true"
+                            aria-labelledby="svgcid-uxckxg4wd2xo" style="margin: 10px 0 0 10px;">
+                            <title id="svgcid-uxckxg4wd2xo"></title>
+                            <g>
+                                <path fill="#3A8088"
+                                    d="M105.8 39.7c-2.6-4.4-9-4.4-11.6 0L76.1 71c-1.3 2.2-3.5 3.7-6 4.1l-34 5.1c-5.7.9-7.7 8.1-3.3 11.8l25.3 21c2.3 1.9 3.4 5 2.9 8l-6.6 34.8c-1 5.5 4.7 9.8 9.7 7.2l32-16.8c2.4-1.3 5.3-1.3 7.8 0l32 16.8c5 2.6 10.7-1.7 9.7-7.2L139 121c-.6-3 .5-6.1 2.9-8l25.3-21c4.4-3.7 2.4-10.9-3.3-11.8l-34-5.1c-2.5-.4-4.7-1.9-6-4.1l-18.1-31.3z">
+                                </path>
+                            </g>
+                        </svg>
+                        <svg preserveAspectRatio="none" data-bbox="30.408 36.4 139.185 127.378"
+                            viewBox="30.408 36.4 139.185 127.378" height="15" width="15"
+                            xmlns="http://www.w3.org/2000/svg" data-type="shape" role="presentation" aria-hidden="true"
+                            aria-labelledby="svgcid-uxckxg4wd2xo" style="margin: 10px 0 0 10px;">
+                            <title id="svgcid-uxckxg4wd2xo"></title>
+                            <g>
+                                <path fill="#3A8088"
+                                    d="M105.8 39.7c-2.6-4.4-9-4.4-11.6 0L76.1 71c-1.3 2.2-3.5 3.7-6 4.1l-34 5.1c-5.7.9-7.7 8.1-3.3 11.8l25.3 21c2.3 1.9 3.4 5 2.9 8l-6.6 34.8c-1 5.5 4.7 9.8 9.7 7.2l32-16.8c2.4-1.3 5.3-1.3 7.8 0l32 16.8c5 2.6 10.7-1.7 9.7-7.2L139 121c-.6-3 .5-6.1 2.9-8l25.3-21c4.4-3.7 2.4-10.9-3.3-11.8l-34-5.1c-2.5-.4-4.7-1.9-6-4.1l-18.1-31.3z">
+                                </path>
+                            </g>
+                        </svg>
+                        <svg preserveAspectRatio="none" data-bbox="30.408 36.4 139.185 127.378"
+                            viewBox="30.408 36.4 139.185 127.378" height="15" width="15"
+                            xmlns="http://www.w3.org/2000/svg" data-type="shape" role="presentation" aria-hidden="true"
+                            aria-labelledby="svgcid-uxckxg4wd2xo" style="margin: 10px 0 0 10px;">
+                            <title id="svgcid-uxckxg4wd2xo"></title>
+                            <g>
+                                <path fill="#3A8088"
+                                    d="M105.8 39.7c-2.6-4.4-9-4.4-11.6 0L76.1 71c-1.3 2.2-3.5 3.7-6 4.1l-34 5.1c-5.7.9-7.7 8.1-3.3 11.8l25.3 21c2.3 1.9 3.4 5 2.9 8l-6.6 34.8c-1 5.5 4.7 9.8 9.7 7.2l32-16.8c2.4-1.3 5.3-1.3 7.8 0l32 16.8c5 2.6 10.7-1.7 9.7-7.2L139 121c-.6-3 .5-6.1 2.9-8l25.3-21c4.4-3.7 2.4-10.9-3.3-11.8l-34-5.1c-2.5-.4-4.7-1.9-6-4.1l-18.1-31.3z">
+                                </path>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <!-- First Card Ending -->
+            <!-- Second Card -->
+            <div class="w-[25%]">
+                <div class="shadow-[0_8px_24px_rgba(149,157,165,0.2)] w-[325px] h-[300px] rounded-3xl">
+                    <svg preserveAspectRatio="xMidYMid meet" data-bbox="20.799 31.376 158.401 137.248"
+                        xmlns="http://www.w3.org/2000/svg" width="55" height="70"
+                        viewBox="20.799 31.376 158.401 137.248" data-type="color" role="presentation" aria-hidden="true"
+                        aria-labelledby="svgcid-k6ng8p-7xm5gu" style="padding-left: 30px;">
+                        <g>
+                            <path fill="#3A8088"
+                                d="M65.565 104.673c6.559 2.296 11.642 6.067 15.25 11.315 3.607 5.247 5.411 11.642 5.411 19.185 0 9.838-3.115 17.873-9.347 24.105-6.231 6.23-13.938 9.346-23.121 9.346-9.511 0-17.381-3.197-23.612-9.592-6.231-6.396-9.347-14.349-9.347-23.859 0-4.592.574-9.265 1.722-14.02 1.148-4.756 3.526-11.724 7.133-20.907l23.12-68.87h30.991l-18.2 73.297zm92.974 0c6.559 2.296 11.642 6.067 15.25 11.315 3.607 5.247 5.411 11.642 5.411 19.185 0 9.838-3.115 17.873-9.346 24.105-6.231 6.23-13.938 9.346-23.121 9.346-9.511 0-17.381-3.197-23.612-9.592-6.231-6.396-9.347-14.349-9.347-23.859 0-4.592.574-9.265 1.722-14.02 1.148-4.756 3.526-11.724 7.133-20.907l23.121-68.87h30.991l-18.202 73.297z"
+                                data-color="1"></path>
+                        </g>
+                    </svg>
+                    <p class="font-thin text-left px-[35px]">
+                        “I'm a testimonial. Click to edit me and add text that says something nice about you and your
+                        services.”
+                    </p>
+                    <h3 class="font-semibold pl-[35px] pt-[80px]">Raymond Souza</h3>
+                    <div class="flex">
+                        <svg preserveAspectRatio="none" data-bbox="30.408 36.4 139.185 127.378"
+                            viewBox="30.408 36.4 139.185 127.378" height="15" width="15"
+                            xmlns="http://www.w3.org/2000/svg" data-type="shape" role="presentation" aria-hidden="true"
+                            aria-labelledby="svgcid-uxckxg4wd2xo" style="margin: 10px 0 0 31px;">
+                            <title id="svgcid-uxckxg4wd2xo"></title>
+                            <g>
+                                <path fill="#3A8088"
+                                    d="M105.8 39.7c-2.6-4.4-9-4.4-11.6 0L76.1 71c-1.3 2.2-3.5 3.7-6 4.1l-34 5.1c-5.7.9-7.7 8.1-3.3 11.8l25.3 21c2.3 1.9 3.4 5 2.9 8l-6.6 34.8c-1 5.5 4.7 9.8 9.7 7.2l32-16.8c2.4-1.3 5.3-1.3 7.8 0l32 16.8c5 2.6 10.7-1.7 9.7-7.2L139 121c-.6-3 .5-6.1 2.9-8l25.3-21c4.4-3.7 2.4-10.9-3.3-11.8l-34-5.1c-2.5-.4-4.7-1.9-6-4.1l-18.1-31.3z">
+                                </path>
+                            </g>
+                        </svg>
+                        <svg preserveAspectRatio="none" data-bbox="30.408 36.4 139.185 127.378"
+                            viewBox="30.408 36.4 139.185 127.378" height="15" width="15"
+                            xmlns="http://www.w3.org/2000/svg" data-type="shape" role="presentation" aria-hidden="true"
+                            aria-labelledby="svgcid-uxckxg4wd2xo" style="margin: 10px 0 0 10px;">
+                            <title id="svgcid-uxckxg4wd2xo"></title>
+                            <g>
+                                <path fill="#3A8088"
+                                    d="M105.8 39.7c-2.6-4.4-9-4.4-11.6 0L76.1 71c-1.3 2.2-3.5 3.7-6 4.1l-34 5.1c-5.7.9-7.7 8.1-3.3 11.8l25.3 21c2.3 1.9 3.4 5 2.9 8l-6.6 34.8c-1 5.5 4.7 9.8 9.7 7.2l32-16.8c2.4-1.3 5.3-1.3 7.8 0l32 16.8c5 2.6 10.7-1.7 9.7-7.2L139 121c-.6-3 .5-6.1 2.9-8l25.3-21c4.4-3.7 2.4-10.9-3.3-11.8l-34-5.1c-2.5-.4-4.7-1.9-6-4.1l-18.1-31.3z">
+                                </path>
+                            </g>
+                        </svg>
+                        <svg preserveAspectRatio="none" data-bbox="30.408 36.4 139.185 127.378"
+                            viewBox="30.408 36.4 139.185 127.378" height="15" width="15"
+                            xmlns="http://www.w3.org/2000/svg" data-type="shape" role="presentation" aria-hidden="true"
+                            aria-labelledby="svgcid-uxckxg4wd2xo" style="margin: 10px 0 0 10px;">
+                            <title id="svgcid-uxckxg4wd2xo"></title>
+                            <g>
+                                <path fill="#3A8088"
+                                    d="M105.8 39.7c-2.6-4.4-9-4.4-11.6 0L76.1 71c-1.3 2.2-3.5 3.7-6 4.1l-34 5.1c-5.7.9-7.7 8.1-3.3 11.8l25.3 21c2.3 1.9 3.4 5 2.9 8l-6.6 34.8c-1 5.5 4.7 9.8 9.7 7.2l32-16.8c2.4-1.3 5.3-1.3 7.8 0l32 16.8c5 2.6 10.7-1.7 9.7-7.2L139 121c-.6-3 .5-6.1 2.9-8l25.3-21c4.4-3.7 2.4-10.9-3.3-11.8l-34-5.1c-2.5-.4-4.7-1.9-6-4.1l-18.1-31.3z">
+                                </path>
+                            </g>
+                        </svg>
+                        <svg preserveAspectRatio="none" data-bbox="30.408 36.4 139.185 127.378"
+                            viewBox="30.408 36.4 139.185 127.378" height="15" width="15"
+                            xmlns="http://www.w3.org/2000/svg" data-type="shape" role="presentation" aria-hidden="true"
+                            aria-labelledby="svgcid-uxckxg4wd2xo" style="margin: 10px 0 0 10px;">
+                            <title id="svgcid-uxckxg4wd2xo"></title>
+                            <g>
+                                <path fill="#3A8088"
+                                    d="M105.8 39.7c-2.6-4.4-9-4.4-11.6 0L76.1 71c-1.3 2.2-3.5 3.7-6 4.1l-34 5.1c-5.7.9-7.7 8.1-3.3 11.8l25.3 21c2.3 1.9 3.4 5 2.9 8l-6.6 34.8c-1 5.5 4.7 9.8 9.7 7.2l32-16.8c2.4-1.3 5.3-1.3 7.8 0l32 16.8c5 2.6 10.7-1.7 9.7-7.2L139 121c-.6-3 .5-6.1 2.9-8l25.3-21c4.4-3.7 2.4-10.9-3.3-11.8l-34-5.1c-2.5-.4-4.7-1.9-6-4.1l-18.1-31.3z">
+                                </path>
+                            </g>
+                        </svg>
+                        <svg preserveAspectRatio="none" data-bbox="30.408 36.4 139.185 127.378"
+                            viewBox="30.408 36.4 139.185 127.378" height="15" width="15"
+                            xmlns="http://www.w3.org/2000/svg" data-type="shape" role="presentation" aria-hidden="true"
+                            aria-labelledby="svgcid-uxckxg4wd2xo" style="margin: 10px 0 0 10px;">
+                            <title id="svgcid-uxckxg4wd2xo"></title>
+                            <g>
+                                <path fill="#3A8088"
+                                    d="M105.8 39.7c-2.6-4.4-9-4.4-11.6 0L76.1 71c-1.3 2.2-3.5 3.7-6 4.1l-34 5.1c-5.7.9-7.7 8.1-3.3 11.8l25.3 21c2.3 1.9 3.4 5 2.9 8l-6.6 34.8c-1 5.5 4.7 9.8 9.7 7.2l32-16.8c2.4-1.3 5.3-1.3 7.8 0l32 16.8c5 2.6 10.7-1.7 9.7-7.2L139 121c-.6-3 .5-6.1 2.9-8l25.3-21c4.4-3.7 2.4-10.9-3.3-11.8l-34-5.1c-2.5-.4-4.7-1.9-6-4.1l-18.1-31.3z">
+                                </path>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <!-- Second Card Ending -->
+            <!-- Third Card -->
+            <div class="w-[25%]">
+                <div class="shadow-[0_8px_24px_rgba(149,157,165,0.2)] w-[325px] h-[300px] rounded-3xl">
+                    <svg preserveAspectRatio="xMidYMid meet" data-bbox="20.799 31.376 158.401 137.248"
+                        xmlns="http://www.w3.org/2000/svg" width="55" height="70"
+                        viewBox="20.799 31.376 158.401 137.248" data-type="color" role="presentation" aria-hidden="true"
+                        aria-labelledby="svgcid-k6ng8p-7xm5gu" style="padding-left: 30px;">
+                        <g>
+                            <path fill="#3A8088"
+                                d="M65.565 104.673c6.559 2.296 11.642 6.067 15.25 11.315 3.607 5.247 5.411 11.642 5.411 19.185 0 9.838-3.115 17.873-9.347 24.105-6.231 6.23-13.938 9.346-23.121 9.346-9.511 0-17.381-3.197-23.612-9.592-6.231-6.396-9.347-14.349-9.347-23.859 0-4.592.574-9.265 1.722-14.02 1.148-4.756 3.526-11.724 7.133-20.907l23.12-68.87h30.991l-18.2 73.297zm92.974 0c6.559 2.296 11.642 6.067 15.25 11.315 3.607 5.247 5.411 11.642 5.411 19.185 0 9.838-3.115 17.873-9.346 24.105-6.231 6.23-13.938 9.346-23.121 9.346-9.511 0-17.381-3.197-23.612-9.592-6.231-6.396-9.347-14.349-9.347-23.859 0-4.592.574-9.265 1.722-14.02 1.148-4.756 3.526-11.724 7.133-20.907l23.121-68.87h30.991l-18.202 73.297z"
+                                data-color="1"></path>
+                        </g>
+                    </svg>
+                    <p class="font-thin text-left px-[35px]">
+                        “I'm a testimonial. Click to edit me and add text that says something nice about you and your
+                        services.”
+                    </p>
+                    <h3 class="font-semibold pl-[35px] pt-[80px]">Maggie Stalk</h3>
+                    <div class="flex">
+                        <svg preserveAspectRatio="none" data-bbox="30.408 36.4 139.185 127.378"
+                            viewBox="30.408 36.4 139.185 127.378" height="15" width="15"
+                            xmlns="http://www.w3.org/2000/svg" data-type="shape" role="presentation" aria-hidden="true"
+                            aria-labelledby="svgcid-uxckxg4wd2xo" style="margin: 10px 0 0 31px;">
+                            <title id="svgcid-uxckxg4wd2xo"></title>
+                            <g>
+                                <path fill="#3A8088"
+                                    d="M105.8 39.7c-2.6-4.4-9-4.4-11.6 0L76.1 71c-1.3 2.2-3.5 3.7-6 4.1l-34 5.1c-5.7.9-7.7 8.1-3.3 11.8l25.3 21c2.3 1.9 3.4 5 2.9 8l-6.6 34.8c-1 5.5 4.7 9.8 9.7 7.2l32-16.8c2.4-1.3 5.3-1.3 7.8 0l32 16.8c5 2.6 10.7-1.7 9.7-7.2L139 121c-.6-3 .5-6.1 2.9-8l25.3-21c4.4-3.7 2.4-10.9-3.3-11.8l-34-5.1c-2.5-.4-4.7-1.9-6-4.1l-18.1-31.3z">
+                                </path>
+                            </g>
+                        </svg>
+                        <svg preserveAspectRatio="none" data-bbox="30.408 36.4 139.185 127.378"
+                            viewBox="30.408 36.4 139.185 127.378" height="15" width="15"
+                            xmlns="http://www.w3.org/2000/svg" data-type="shape" role="presentation" aria-hidden="true"
+                            aria-labelledby="svgcid-uxckxg4wd2xo" style="margin: 10px 0 0 10px;">
+                            <title id="svgcid-uxckxg4wd2xo"></title>
+                            <g>
+                                <path fill="#3A8088"
+                                    d="M105.8 39.7c-2.6-4.4-9-4.4-11.6 0L76.1 71c-1.3 2.2-3.5 3.7-6 4.1l-34 5.1c-5.7.9-7.7 8.1-3.3 11.8l25.3 21c2.3 1.9 3.4 5 2.9 8l-6.6 34.8c-1 5.5 4.7 9.8 9.7 7.2l32-16.8c2.4-1.3 5.3-1.3 7.8 0l32 16.8c5 2.6 10.7-1.7 9.7-7.2L139 121c-.6-3 .5-6.1 2.9-8l25.3-21c4.4-3.7 2.4-10.9-3.3-11.8l-34-5.1c-2.5-.4-4.7-1.9-6-4.1l-18.1-31.3z">
+                                </path>
+                            </g>
+                        </svg>
+                        <svg preserveAspectRatio="none" data-bbox="30.408 36.4 139.185 127.378"
+                            viewBox="30.408 36.4 139.185 127.378" height="15" width="15"
+                            xmlns="http://www.w3.org/2000/svg" data-type="shape" role="presentation" aria-hidden="true"
+                            aria-labelledby="svgcid-uxckxg4wd2xo" style="margin: 10px 0 0 10px;">
+                            <title id="svgcid-uxckxg4wd2xo"></title>
+                            <g>
+                                <path fill="#3A8088"
+                                    d="M105.8 39.7c-2.6-4.4-9-4.4-11.6 0L76.1 71c-1.3 2.2-3.5 3.7-6 4.1l-34 5.1c-5.7.9-7.7 8.1-3.3 11.8l25.3 21c2.3 1.9 3.4 5 2.9 8l-6.6 34.8c-1 5.5 4.7 9.8 9.7 7.2l32-16.8c2.4-1.3 5.3-1.3 7.8 0l32 16.8c5 2.6 10.7-1.7 9.7-7.2L139 121c-.6-3 .5-6.1 2.9-8l25.3-21c4.4-3.7 2.4-10.9-3.3-11.8l-34-5.1c-2.5-.4-4.7-1.9-6-4.1l-18.1-31.3z">
+                                </path>
+                            </g>
+                        </svg>
+                        <svg preserveAspectRatio="none" data-bbox="30.408 36.4 139.185 127.378"
+                            viewBox="30.408 36.4 139.185 127.378" height="15" width="15"
+                            xmlns="http://www.w3.org/2000/svg" data-type="shape" role="presentation" aria-hidden="true"
+                            aria-labelledby="svgcid-uxckxg4wd2xo" style="margin: 10px 0 0 10px;">
+                            <title id="svgcid-uxckxg4wd2xo"></title>
+                            <g>
+                                <path fill="#3A8088"
+                                    d="M105.8 39.7c-2.6-4.4-9-4.4-11.6 0L76.1 71c-1.3 2.2-3.5 3.7-6 4.1l-34 5.1c-5.7.9-7.7 8.1-3.3 11.8l25.3 21c2.3 1.9 3.4 5 2.9 8l-6.6 34.8c-1 5.5 4.7 9.8 9.7 7.2l32-16.8c2.4-1.3 5.3-1.3 7.8 0l32 16.8c5 2.6 10.7-1.7 9.7-7.2L139 121c-.6-3 .5-6.1 2.9-8l25.3-21c4.4-3.7 2.4-10.9-3.3-11.8l-34-5.1c-2.5-.4-4.7-1.9-6-4.1l-18.1-31.3z">
+                                </path>
+                            </g>
+                        </svg>
+                        <svg preserveAspectRatio="none" data-bbox="30.408 36.4 139.185 127.378"
+                            viewBox="30.408 36.4 139.185 127.378" height="15" width="15"
+                            xmlns="http://www.w3.org/2000/svg" data-type="shape" role="presentation" aria-hidden="true"
+                            aria-labelledby="svgcid-uxckxg4wd2xo" style="margin: 10px 0 0 10px;">
+                            <title id="svgcid-uxckxg4wd2xo"></title>
+                            <g>
+                                <path fill="#3A8088"
+                                    d="M105.8 39.7c-2.6-4.4-9-4.4-11.6 0L76.1 71c-1.3 2.2-3.5 3.7-6 4.1l-34 5.1c-5.7.9-7.7 8.1-3.3 11.8l25.3 21c2.3 1.9 3.4 5 2.9 8l-6.6 34.8c-1 5.5 4.7 9.8 9.7 7.2l32-16.8c2.4-1.3 5.3-1.3 7.8 0l32 16.8c5 2.6 10.7-1.7 9.7-7.2L139 121c-.6-3 .5-6.1 2.9-8l25.3-21c4.4-3.7 2.4-10.9-3.3-11.8l-34-5.1c-2.5-.4-4.7-1.9-6-4.1l-18.1-31.3z">
+                                </path>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <!-- Third Card Ending -->
+        </div>
+    </div>
+    <!-- Satisfied Customers -->
+    <!-- Email Section -->
+    <!-- Build after the whole website is responsive and done -->
+    <!-- Email Section -->
+    <!-- Footer Section -->
+    <!-- Our Story -->
+    <div class="relative">
+        <div>
+            <img class="w-full h-[350px]" src="/images/feature_background.jpg" alt="">
+        </div>
+        <div class="absolute top-0 w-full pt-20 px-28">
+            <div class="flex">
+                <svg fill="white" preserveAspectRatio="xMidYMid meet" data-bbox="22.5 21.989 155 154.879"
+                    viewBox="22.5 21.989 155 154.879" height="25" width="25" xmlns="http://www.w3.org/2000/svg"
+                    data-type="shape" role="img" aria-labelledby="svgcid--1rz219au5y0d">
+                    <title id="svgcid--1rz219au5y0d">Homepage</title>
+                    <g>
+                        <path
+                            d="M76.4 44.9c3.8-.7 7.6 1.2 9.3 4.6.4.6.7 1.3 1 2 1.1 16.3 2.2 32.2 3.2 48.2 0 1.7.2 3.3.8 4.9 1.3 3.1 4.4 5.1 7.8 4.9l51.6-3.3.4.1.9.1c1.9.2 3.6 1.1 4.9 2.4 1.5 1.6 2.4 3.7 2.3 5.8-2 29.6-23.8 54.4-53.3 60.7-29.6 6.4-59.8-7.2-74.4-33.2-4.3-7.5-7-15.8-7.9-24.3-.4-2.5-.5-5.1-.5-7.6.1-31.4 22.5-58.6 53.9-65.3zM107.1 22c35.4 1.1 65 26.8 70.4 61.1v1.6c-.1 1.3-.6 2.5-1.5 3.5-1.1 1.2-2.6 2-4.3 2.1l-59.5 3.9h-1c-1.6-.1-3.2-.7-4.4-1.8-1.5-1.3-2.3-3.2-2.3-5.1l-4-58.5v-1c.1-1.6.8-3.2 2-4.3 1.3-1 2.9-1.6 4.6-1.5z">
+                        </path>
+                    </g>
+                </svg>
+                <p class="pl-1.5 text-[22px] font-light text-white">Go On</p>
+            </div>
+            <div class="flex justify-between">
+                <!-- Info Section -->
+                <div class="pt-[50px] leading-loose">
+                    <div class="flex">
+                        <p class="font-thin text-white pr-[29px]">Tel: 123-456-7890</p>
+                        <p class="font-thin text-white pl-[28px]">500 Terry Francois Street</p>
+                    </div>
+                    <div class="flex">
+                        <p class="font-thin text-white pr-[25px]">Email: info@mysite.com</p>
+                        <p class="font-thin text-white pr-[25px]">San Francisco, CA 94158</p>
+                    </div>
+                    <div class="flex items-center my-[30px]">
+                        
+                        <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg fill="white" style="position: relative; right: 10px" enable-background="new 0 0 56.693 56.693" height="30px" id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" width="30px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029  c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77  L40.43,21.739z"/></svg>
+
+                        <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg fill="white" enable-background="new 0 0 56.693 56.693" height="30px" id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" width="30px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M52.837,15.065c-1.811,0.805-3.76,1.348-5.805,1.591c2.088-1.25,3.689-3.23,4.444-5.592c-1.953,1.159-4.115,2-6.418,2.454  c-1.843-1.964-4.47-3.192-7.377-3.192c-5.581,0-10.106,4.525-10.106,10.107c0,0.791,0.089,1.562,0.262,2.303  c-8.4-0.422-15.848-4.445-20.833-10.56c-0.87,1.492-1.368,3.228-1.368,5.082c0,3.506,1.784,6.6,4.496,8.412  c-1.656-0.053-3.215-0.508-4.578-1.265c-0.001,0.042-0.001,0.085-0.001,0.128c0,4.896,3.484,8.98,8.108,9.91  c-0.848,0.23-1.741,0.354-2.663,0.354c-0.652,0-1.285-0.063-1.902-0.182c1.287,4.015,5.019,6.938,9.441,7.019  c-3.459,2.711-7.816,4.327-12.552,4.327c-0.815,0-1.62-0.048-2.411-0.142c4.474,2.869,9.786,4.541,15.493,4.541  c18.591,0,28.756-15.4,28.756-28.756c0-0.438-0.009-0.875-0.028-1.309C49.769,18.873,51.483,17.092,52.837,15.065z"/></svg>
+                        
+                        <?xml version="1.0" ?><svg style="position: relative; left: 10px" fill="white" baseProfile="tiny" height="40px" id="Layer_1" version="1.2" viewBox="0 0 24 24" width="40px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M8,19H5V9h3V19z M19,19h-3v-5.342c0-1.392-0.496-2.085-1.479-2.085c-0.779,0-1.273,0.388-1.521,1.165C13,14,13,19,13,19h-3   c0,0,0.04-9,0-10h2.368l0.183,2h0.062c0.615-1,1.598-1.678,2.946-1.678c1.025,0,1.854,0.285,2.487,1.001   C18.683,11.04,19,12.002,19,13.353V19z"/></g><g><ellipse cx="6.5" cy="6.5" rx="1.55" ry="1.5"/></g></svg>
+                       
+                    </div>
+                </div>
+                <!-- Info Section -->
+                <div class="flex">
+                    <!-- Store Images section -->
+                    <div>
+                        <div class="flex mb-8">
+                            <img class="w-[137px] h-[41px] rounded-md mr-7" src="/images/apple_store_img.jpg"
+                                alt="apple store">
+                            <img class="w-[140px] h-[41px] rounded-md ml-7" src="/images/android_store_img.jpg"
+                                alt="android store">
+                        </div>
+                        <p class="font-thin text-white">© 2035 by Go On. Powered and secured by <a
+                                class="underline decoration-1"
+                                href="https://www.wix.com/?utm_campaign=vir_created_with">Wix</a></p>
+                    </div>
+                    <!-- Store Images section -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Our Story -->
+    <!-- Footer Section -->
 </body>
+
 </html>
