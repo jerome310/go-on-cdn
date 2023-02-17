@@ -32,16 +32,18 @@
                 </span>
             </div>
             <div x-data="{open: false}" class="text-white font-extralight">
-                <svg x-on:click="open = !open" class="w-[30px] h-[30px]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <svg x-on:click="open = !open" class="w-[30px] h-[30px] md:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                   </svg>                  
-                <div class="fixed left-0 right-0 min-h-screen bg-[#161635]">
-                    <a href="#" class="transition ease-in-out duration-500 pl-7 hover:text-[#ACD1D6]">Home</a>
-                    <a href="#" class="transition ease-in-out duration-500 pl-7 hover:text-[#ACD1D6]">The App</a>
-                    <a href="#" class="transition ease-in-out duration-500 pl-7 hover:text-[#ACD1D6]">Features</a>
-                    <a href="#" class="transition ease-in-out duration-500 pl-7 hover:text-[#ACD1D6]">About Us</a>
-                    <a href="#" class="transition ease-in-out duration-500 pl-7 hover:text-[#ACD1D6]">Reviews</a>
-                    <a href="#" class="transition ease-in-out duration-500 pl-7 hover:text-[#ACD1D6]">Contact</a>
+                <div x-show="open" class="fixed left-0 right-0 min-h-screen bg-[#161635]">
+                    <div class="flex flex-col justify-center items-center h-[500px]">
+                    <a href="#" class="pb-[20px] text-[24px] font-semibold transition ease-in-out duration-500 pl-7 hover:text-[#ACD1D6]">Home</a>
+                    <a href="#" class="pb-[20px] text-[22px] font-semibold  transition ease-in-out duration-500 pl-7 hover:text-[#ACD1D6]">The App</a>
+                    <a href="#" class="pb-[20px] text-[22px] font-semibold transition ease-in-out duration-500 pl-7 hover:text-[#ACD1D6]">Features</a>
+                    <a href="#" class="pb-[20px] text-[22px] font-semibold transition ease-in-out duration-500 pl-7 hover:text-[#ACD1D6]">About Us</a>
+                    <a href="#" class="pb-[20px] text-[22px] font-semibold transition ease-in-out duration-500 pl-7 hover:text-[#ACD1D6]">Reviews</a>
+                    <a href="#" class="pb-[20px] text-[22px] font-semibold transition ease-in-out duration-500 pl-7 hover:text-[#ACD1D6]">Contact</a>
+                    </div>
                 </div>
             </div>
         </div>
