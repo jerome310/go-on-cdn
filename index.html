@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Go</title>
+    <title>Go On CDN</title>
     <!-- Alpine Script -->
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <!-- Tailwind Link -->
@@ -31,23 +31,28 @@
                     <p class="pl-1.5 text-xl font-light">Go On</p>
                 </span>
             </div>
-            <div class="text-white font-extralight">
-                <a href="#" class="transition ease-in-out duration-500 pl-7 hover:text-[#ACD1D6]">Home</a>
-                <a href="#" class="transition ease-in-out duration-500 pl-7 hover:text-[#ACD1D6]">The App</a>
-                <a href="#" class="transition ease-in-out duration-500 pl-7 hover:text-[#ACD1D6]">Features</a>
-                <a href="#" class="transition ease-in-out duration-500 pl-7 hover:text-[#ACD1D6]">About Us</a>
-                <a href="#" class="transition ease-in-out duration-500 pl-7 hover:text-[#ACD1D6]">Reviews</a>
-                <a href="#" class="transition ease-in-out duration-500 pl-7 hover:text-[#ACD1D6]">Contact</a>
+            <div x-data="{open: false}" class="text-white font-extralight">
+                <svg x-on:click="open = !open" class="w-[30px] h-[30px]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>                  
+                <div class="fixed left-0 right-0 min-h-screen bg-[#161635]">
+                    <a href="#" class="transition ease-in-out duration-500 pl-7 hover:text-[#ACD1D6]">Home</a>
+                    <a href="#" class="transition ease-in-out duration-500 pl-7 hover:text-[#ACD1D6]">The App</a>
+                    <a href="#" class="transition ease-in-out duration-500 pl-7 hover:text-[#ACD1D6]">Features</a>
+                    <a href="#" class="transition ease-in-out duration-500 pl-7 hover:text-[#ACD1D6]">About Us</a>
+                    <a href="#" class="transition ease-in-out duration-500 pl-7 hover:text-[#ACD1D6]">Reviews</a>
+                    <a href="#" class="transition ease-in-out duration-500 pl-7 hover:text-[#ACD1D6]">Contact</a>
+                </div>
             </div>
         </div>
     </nav>
     <!-- Navbar Section -->
     <!-- Hero section -->
-    <header style="background: rgb(51,8,103);
-background: linear-gradient(167deg, rgba(51,8,103,1) 35%, rgba(48,207,208,1) 100%);">
-        <div class="flex justify-between pt-[15%] pb-24 mb-[5%] w-[75%] m-auto">
+    <!-- <header style="background: rgb(51,8,103);
+background: linear-gradient(167deg, rgba(51,8,103,1) 35%, rgba(48,207,208,1) 100%);"> -->
+        <!-- <div class="flex justify-between pt-[15%] pb-24 mb-[5%] w-[75%] m-auto"> -->
             <!-- Left hero side section -->
-            <div>
+            <!-- <div>
                 <div class="pt-[35px]">
                     <h1 class="text-white text-[65px] leading-tight">Discover New Possibilities</h1>
                     <p class="pb-4 text-2xl font-thin text-white pt-7">Try it yourself. Download now.</p>
@@ -58,25 +63,25 @@ background: linear-gradient(167deg, rgba(51,8,103,1) 35%, rgba(48,207,208,1) 100
                     <img class="w-[140px] h-[41px] rounded-md ml-2.5" src="/images/android_store_img.jpg"
                         alt="android store">
                 </div>
-            </div>
+            </div> -->
             <!-- Left hero side section -->
             <!-- Right hero side section -->
-            <div class="relative flex bg-yellow-500">
+            <!-- <div class="relative flex bg-yellow-500">
                 <div class="bg-transparent">
                     <img class="w-[462px] h-[666px] border-[12px] border-black" src="/images/ipad mockup.jpg"
                         alt="Go On tablet hero image">
-                </div>
+                </div> -->
                 <!-- <img src="" alt=""> -->
-                <img class="absolute w-[231px] h-[501px] left-[-80px] top-[200px] border-[12px] border-black rounded-3xl"
-                    src="/images/phone mockup.jpg" alt="Go On phone hero image">
+                <!-- <img class="absolute w-[231px] h-[501px] left-[-80px] top-[200px] border-[12px] border-black rounded-3xl"
+                    src="/images/phone mockup.jpg" alt="Go On phone hero image"> -->
                 <!-- <img src="" alt=""> -->
-            </div>
+            <!-- </div> -->
             <!-- Right hero side section -->
-        </div>
-    </header>
+        <!-- </div>
+    </header> -->
     <!-- Hero section -->
     <!-- Reinventing Mobile Technology -->
-    <div class="flex justify-between w-3/4 m-auto mb-[5%]">
+    <!-- <div class="flex justify-between w-3/4 m-auto mb-[5%]">
         <div class="w-2/5">
             <h1 class="text-[50px]">Reinventing Mobile Technology</h1>
         </div>
@@ -91,22 +96,22 @@ background: linear-gradient(167deg, rgba(51,8,103,1) 35%, rgba(48,207,208,1) 100
                 class="border border-black px-5 py-2 rounded-md transition ease-in-out duration-300 hover:text-white hover:bg-[#3A8088] hover:border-[#3A8088]">Download
                 the app</a>
         </div>
-    </div>
+    </div> -->
     <!-- Reinventing Mobile Technology -->
     <!-- Features -->
-    <div class="relative">
+    <!-- <div class="relative">
         <div>
-            <img class="w-full" src="/images/feature_background.jpg" alt="">
+            <img class="w-full h-[600px]" src="/images/feature_background.jpg" alt="">
         </div>
         <div class="w-[70%] m-auto">
-            <div class="pt-[100px] absolute top-0">
+            <div class="pt-[75px] absolute top-0">
                 <h1 class="text-[40px] text-white pb-2.5">Features</h1>
                 <p class="font-thin text-white">I'm a title. Click here to add your own text and edit me.</p>
-            </div>
+            </div> -->
             <!-- Features Container -->
-            <div class="absolute flex justify-around w-4/5 top-2/4">
+            <!-- <div class="absolute flex justify-around w-4/5 top-[40%]"> -->
                 <!-- Feature 1st Section -->
-                <div class="mr-6">
+                <!-- <div class="mr-6">
                     <svg preserveAspectRatio="none" data-bbox="30.408 36.4 139.185 127.378"
                         viewBox="30.408 36.4 139.185 127.378" height="25" width="25" xmlns="http://www.w3.org/2000/svg"
                         data-type="shape" role="presentation" aria-hidden="true" aria-labelledby="svgcid-l8guul-6i9kb8"
@@ -122,10 +127,10 @@ background: linear-gradient(167deg, rgba(51,8,103,1) 35%, rgba(48,207,208,1) 100
                     <p class="font-thin text-white pr-[30px]">I'm a paragraph. Click here to add your own text and edit
                         me. It’s easy. Just click “Edit Text” or double click me to add your own content and make
                         changes to the font.</p>
-                </div>
+                </div> -->
                 <!-- Feature 1st Section -->
                 <!-- Feature 2nd Section -->
-                <div class="mx-6">
+                <!-- <div class="mx-6">
                     <svg preserveAspectRatio="none" data-bbox="34.4 26 131.6 140.9" viewBox="34.4 26 131.6 140.9"
                         height="25" width="25" xmlns="http://www.w3.org/2000/svg" data-type="shape" role="presentation"
                         aria-hidden="true" aria-labelledby="svgcid-rfa66w-baylml">
@@ -141,10 +146,10 @@ background: linear-gradient(167deg, rgba(51,8,103,1) 35%, rgba(48,207,208,1) 100
                     <p class="font-thin text-white pr-[30px]">I'm a paragraph. Click here to add your own text and edit
                         me. It’s easy. Just click “Edit Text” or double click me to add your own content and make
                         changes to the font.</p>
-                </div>
+                </div> -->
                 <!-- Feature 2nd Section -->
                 <!-- Feature 3rd Section -->
-                <div class="ml-6">
+                <!-- <div class="ml-6">
                     <svg preserveAspectRatio="xMidYMid meet" data-bbox="45.175 27.575 109.45 144.775"
                         viewBox="45.175 27.575 109.45 144.775" height="25" width="25" xmlns="http://www.w3.org/2000/svg"
                         data-type="shape" role="presentation" aria-hidden="true" aria-labelledby="svgcid--7ivipd-1hyu82"
@@ -160,46 +165,46 @@ background: linear-gradient(167deg, rgba(51,8,103,1) 35%, rgba(48,207,208,1) 100
                     <p class="font-thin text-white pr-[30px]">I'm a paragraph. Click here to add your own text and edit
                         me. It’s easy. Just click “Edit Text” or double click me to add your own content and make
                         changes to the font.</p>
-                </div>
+                </div> -->
                 <!-- Feature 3rd Section -->
-            </div>
+            <!-- </div> -->
             <!-- Features Container -->
-        </div>
-    </div>
+        <!-- </div>
+    </div> -->
     <!-- Features -->
     <!-- App Works Section -->
-    <div class="mt-[50px] mb-[75px]">
-        <div class="w-[70%] m-auto flex">
+    <!-- <div class="mt-[50px] mb-[75px]">
+        <div class="w-[60%] m-auto flex">
             <div>
                 <h1 class="text-[45px]">How the App Works</h1>
                 <p class="pt-10 text-lg font-thin">/01</p>
-                <h2 class="text-[25px] font-thin w-1/5 py-4">Personalized Experience</h2>
-                <p class="font-thin w-[30%]">I'm a paragraph. Click here to add your own text and edit me. It’s easy.
+                <h2 class="text-[25px] font-thin py-4">Personalized Experience</h2>
+                <p class="font-thin w-[50%]">I'm a paragraph. Click here to add your own text and edit me. It’s easy.
                     Just click “Edit Text” or double click me to add your own content and make changes to the font.</p>
             </div>
             <div>
-                <img class="w-[420px] h-[583px] rounded-3xl border-[12px] border-black"
+                <img class="w-[350px] h-[450px] rounded-3xl border-[12px] border-black"
                     src="/images/phone_mockup_two.jpg" alt="phone phone mockup two">
             </div>
         </div>
 
-        <div class="mt-[10%] w-[70%] m-auto flex justify-between">
-            <div class="w-[100%]">
-                <img class="w-[565px] h-[262px] rounded-3xl border-[12px] border-black" src="/images/tablet_two.jpg"
+        <div class="mt-[6%] w-[70%] m-auto flex justify-between">
+            <div class="w-[75%]">
+                <img class="w-[500px] h-[262px] rounded-3xl border-[12px] border-black" src="/images/tablet_two.jpg"
                     alt="tablet mockup design">
             </div>
             <div class="w-[30%]">
                 <p class="text-lg font-thin">/02</p>
-                <h2 class="text-[25px] font-thin w-3/5 py-4">Cloud Based
+                <h2 class="text-[25px] font-thin py-4">Cloud Based
                     Technology</h2>
                 <p class="font-thin">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click
                     “Edit Text” or double click me to add your own content and make changes to the font.</p>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- App Works Section -->
     <!-- Our Story -->
-    <div class="relative">
+    <!-- <div class="relative">
         <div>
             <img class="w-full h-[450px]" src="/images/feature_background.jpg" alt="">
         </div>
@@ -217,14 +222,14 @@ background: linear-gradient(167deg, rgba(51,8,103,1) 35%, rgba(48,207,208,1) 100
                     great place for you to tell a story and let your users know a little more about you.</p>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Our Story -->
     <!-- Satisfied Customers -->
-    <div class="m-auto my-20">
+    <!-- <div class="m-auto my-20">
         <h1 class="pl-[18%] text-5xl w-1/4 pb-[75px] leading-normal">Satisfied Customers</h1>
-        <div class="flex justify-between w-[65%] m-auto">
+        <div class="flex justify-between w-[65%] m-auto"> -->
             <!-- First Card -->
-            <div class="w-[25%]">
+            <!-- <div class="w-[25%]">
                 <div class="shadow-[0_8px_24px_rgba(149,157,165,0.2)] w-[325px] h-[300px] rounded-3xl">
                     <svg preserveAspectRatio="xMidYMid meet" data-bbox="20.799 31.376 158.401 137.248"
                         xmlns="http://www.w3.org/2000/svg" width="55" height="70"
@@ -299,10 +304,10 @@ background: linear-gradient(167deg, rgba(51,8,103,1) 35%, rgba(48,207,208,1) 100
                         </svg>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- First Card Ending -->
             <!-- Second Card -->
-            <div class="w-[25%]">
+            <!-- <div class="w-[25%]">
                 <div class="shadow-[0_8px_24px_rgba(149,157,165,0.2)] w-[325px] h-[300px] rounded-3xl">
                     <svg preserveAspectRatio="xMidYMid meet" data-bbox="20.799 31.376 158.401 137.248"
                         xmlns="http://www.w3.org/2000/svg" width="55" height="70"
@@ -377,10 +382,10 @@ background: linear-gradient(167deg, rgba(51,8,103,1) 35%, rgba(48,207,208,1) 100
                         </svg>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- Second Card Ending -->
             <!-- Third Card -->
-            <div class="w-[25%]">
+            <!-- <div class="w-[25%]">
                 <div class="shadow-[0_8px_24px_rgba(149,157,165,0.2)] w-[325px] h-[300px] rounded-3xl">
                     <svg preserveAspectRatio="xMidYMid meet" data-bbox="20.799 31.376 158.401 137.248"
                         xmlns="http://www.w3.org/2000/svg" width="55" height="70"
@@ -455,10 +460,10 @@ background: linear-gradient(167deg, rgba(51,8,103,1) 35%, rgba(48,207,208,1) 100
                         </svg>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- Third Card Ending -->
-        </div>
-    </div>
+        <!-- </div>
+    </div> -->
     <!-- Satisfied Customers -->
     <!-- Email Section -->
     <!-- Build after the whole website is responsive and done -->
@@ -466,11 +471,11 @@ background: linear-gradient(167deg, rgba(51,8,103,1) 35%, rgba(48,207,208,1) 100
     <!-- Footer Section -->
     <!-- Our Story -->
     <div class="relative">
-        <div>
+        <!-- <div>
             <img class="w-full h-[350px]" src="/images/feature_background.jpg" alt="">
-        </div>
+        </div> -->
         <div class="absolute top-0 w-full pt-20 px-28">
-            <div class="flex">
+            <!-- <div class="flex">
                 <svg fill="white" preserveAspectRatio="xMidYMid meet" data-bbox="22.5 21.989 155 154.879"
                     viewBox="22.5 21.989 155 154.879" height="25" width="25" xmlns="http://www.w3.org/2000/svg"
                     data-type="shape" role="img" aria-labelledby="svgcid--1rz219au5y0d">
@@ -482,10 +487,10 @@ background: linear-gradient(167deg, rgba(51,8,103,1) 35%, rgba(48,207,208,1) 100
                     </g>
                 </svg>
                 <p class="pl-1.5 text-[22px] font-light text-white">Go On</p>
-            </div>
+            </div> -->
             <div class="flex justify-between">
                 <!-- Info Section -->
-                <div class="pt-[50px] leading-loose">
+                <!-- <div class="pt-[50px] leading-loose">
                     <div class="flex">
                         <p class="font-thin text-white pr-[29px]">Tel: 123-456-7890</p>
                         <p class="font-thin text-white pl-[28px]">500 Terry Francois Street</p>
@@ -503,11 +508,11 @@ background: linear-gradient(167deg, rgba(51,8,103,1) 35%, rgba(48,207,208,1) 100
                         <?xml version="1.0" ?><svg style="position: relative; left: 10px" fill="white" baseProfile="tiny" height="40px" id="Layer_1" version="1.2" viewBox="0 0 24 24" width="40px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M8,19H5V9h3V19z M19,19h-3v-5.342c0-1.392-0.496-2.085-1.479-2.085c-0.779,0-1.273,0.388-1.521,1.165C13,14,13,19,13,19h-3   c0,0,0.04-9,0-10h2.368l0.183,2h0.062c0.615-1,1.598-1.678,2.946-1.678c1.025,0,1.854,0.285,2.487,1.001   C18.683,11.04,19,12.002,19,13.353V19z"/></g><g><ellipse cx="6.5" cy="6.5" rx="1.55" ry="1.5"/></g></svg>
                        
                     </div>
-                </div>
+                </div> -->
                 <!-- Info Section -->
                 <div class="flex">
                     <!-- Store Images section -->
-                    <div>
+                    <!-- <div>
                         <div class="flex mb-8">
                             <img class="w-[137px] h-[41px] rounded-md mr-7" src="/images/apple_store_img.jpg"
                                 alt="apple store">
@@ -517,7 +522,7 @@ background: linear-gradient(167deg, rgba(51,8,103,1) 35%, rgba(48,207,208,1) 100
                         <p class="font-thin text-white">© 2035 by Go On. Powered and secured by <a
                                 class="underline decoration-1"
                                 href="https://www.wix.com/?utm_campaign=vir_created_with">Wix</a></p>
-                    </div>
+                    </div> -->
                     <!-- Store Images section -->
                 </div>
             </div>
