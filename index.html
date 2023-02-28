@@ -109,7 +109,7 @@
             <!-- Start Left Side -->
             <div x-data="{ shown: false }" x-intersect="shown = true">
                 <div x-show="shown" x-transition.duration.5000ms class="pt-[75px] md:pt-[35px]">
-                    <h1 class="md:text-[65px] text-[50px] text-white leading-tight">Discover New Possibilities</h1>
+                    <h1 class="md:text-[65px] min-[500px]:text-[50px] max-[480px]:text-[40px] text-white leading-tight">Discover New Possibilities</h1>
                     <p class="pb-4 text-2xl font-thin text-white pt-7">Try it yourself. Download now.</p>
                 </div>
                 <div x-show="shown" x-transition.duration.5000ms class="mt-[15px] md:flex md:mt-0">
@@ -123,26 +123,26 @@
             <!-- Start Right Side -->
             <div x-data="{ open: false }" x-intersect="open = true" class="relative flex md:mt-0 mt-24">
                 <div class="bg-transparent">
-                    <img class="md:w-[462px] md:h-[666px] border-[12px] border-black rounded-3xl"
+                    <img class="max-[480px]:w-[400px] max-[480px]:h-[500px] sm:w-[462px] sm:h-[666px] md:w-[462px] md:h-[666px] border-[12px] border-black rounded-3xl"
                         src="/images/ipad mockup.jpg" alt="Go On tablet hero image">
                 </div>
                 <img x-show="open" x-transition:enter="transition duration-[5000ms]"
-                     x-transition:enter-start="opacity-0 -translate-x-[-40px]"
-                    class="shadow-[0_50px_25px_-24px_rgb(0,0,0,0.3)] rounded-xl absolute right-[-50px] md:top-[125px] md:w-[188px] md:h-[119px] w-[168px] h-[110px] top-[100px]"
+                     x-transition:enter-start="opacity-0 max-[280px]:-translate-x-[0px] max-[480px]:-translate-x-[-20px] md:-translate-x-[-40px]"
+                    class="shadow-[0_50px_25px_-24px_rgb(0,0,0,0.3)] rounded-xl absolute md:right-[-50px] md:top-[125px] md:w-[188px] md:h-[119px] w-[168px] h-[110px] top-[100px] right-[-50px] max-[280px]:w-[100px] max-[280px]:h-[75px] max-[280px]:right-[-25px] max-[480px]:w-[128px] max-[480px]:h-[100px] max-[480px]:top-[100px] max-[480px]:right-[-25px]"
                     src="/images/ipad_slide_img.jpg" alt="ipad slider">
 
                 <img class="w-[215px] h-[401px] left-[-40px] absolute top-[200px] border-[12px] border-black rounded-3xl md:left-[-80px] md:w-[231px] md:h-[501px]"
                     src="/images/phone mockup.jpg" alt="Go On phone hero image">
 
                 <img x-show="open" x-transition:enter="transition duration-[5000ms]"
-                     x-transition:enter-start="opacity-0 -translate-x-[-125px]" class="shadow-[0_50px_25px_-24px_rgb(0,0,0,0.3)] rounded-xl absolute left-[-50px] w-[200px] h-[40px] bottom-[30px] md:left-[-100px] md:w-[239px] md:h-[55px] md:bottom-[100px]" src="/images/phone_slider_img.jpg" alt="iphone slider">
+                     x-transition:enter-start="opacity-0 -translate-x-[-125px]" class="shadow-[0_50px_25px_-24px_rgb(0,0,0,0.3)] rounded-xl absolute max-[480px]:left-[-42px] max-[480px]:w-[170px] max-[480px]:h-[40px] max-[480px]:bottom-[15px] left-[-50px] w-[200px] h-[40px] bottom-[30px] md:left-[-100px] md:w-[239px] md:h-[55px] md:bottom-[100px]" src="/images/phone_slider_img.jpg" alt="iphone slider">
             </div>
             <!-- End Right Side -->
         </div>
     </div>
     <!-- Hero section -->
     <!-- Reinventing Mobile Technology -->
-    <div x-data="{ shown: false }" x-intersect="shown = true" class="flex justify-between w-3/4 m-auto mb-[5%]">
+    <!-- <div x-data="{ shown: false }" x-intersect="shown = true" class="flex justify-between w-3/4 m-auto mb-[5%]">
         <div x-show="shown" x-transition.duration.2000ms class="w-2/5">
             <h1 class="text-[50px]">Reinventing Mobile Technology</h1>
         </div>
@@ -157,7 +157,7 @@
                 class="border border-black px-5 py-2 rounded-md transition ease-in-out duration-300 hover:text-white hover:bg-[#3A8088] hover:border-[#3A8088]">Download
                 the app</a>
         </div>
-    </div>
+    </div> -->
     <!-- Reinventing Mobile Technology -->
     <!-- Features -->
     <!-- <div class="relative">
