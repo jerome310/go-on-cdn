@@ -163,18 +163,18 @@
     <!-- Features -->
     <div x-data="{ shown: false }" x-intersect="shown = true" class="relative">
         <div>
-            <img class="w-full h-[600px]" src="/images/feature_background.jpg" alt="">
+            <img class="w-full h-[1200px] md:h-[600px]" src="/images/feature_background.jpg" alt="">
         </div>
         <div class="w-[70%] m-auto">
             <div x-show="shown" x-transition.duration.2000ms class="pt-[75px] absolute top-0">
-                <h1 class="text-[40px] text-white pb-2.5">Features</h1>
+                <h1 class="text-[40px] text-white pb-2.5 text-center md:text-left">Features</h1>
                 <p class="font-thin text-white">I'm a title. Click here to add your own text and edit me.</p>
             </div>
     <!-- Features Container -->
-    <div class="absolute flex justify-around w-4/5 top-[40%]">
+    <div class="absolute justify-around bg-red-500 m-auto w-full top-[20%] md:w-4/5 md:top-[40%] md:flex">
     <!-- Feature 1st Section -->
-    <div x-show="shown" x-transition.duration.2000ms class="mr-6">
-                    <svg preserveAspectRatio="none" data-bbox="30.408 36.4 139.185 127.378"
+    <div class="mb-[75px] md:mb-[0px]" x-show="shown" x-transition.duration.2000ms class="mr-6">
+                    <svg class="m-auto md:m-0" preserveAspectRatio="none" data-bbox="30.408 36.4 139.185 127.378"
                         viewBox="30.408 36.4 139.185 127.378" height="25" width="25" xmlns="http://www.w3.org/2000/svg"
                         data-type="shape" role="presentation" aria-hidden="true" aria-labelledby="svgcid-l8guul-6i9kb8"
                         fill="white">
@@ -185,11 +185,11 @@
                             </path>
                         </g>
                     </svg>
-                    <h2 class="text-white text-[25px] font-thin w-[70%] py-[25px]">High Speed Performance</h2>
-                    <p class="font-thin text-white pr-[30px]">I'm a paragraph. Click here to add your own text and edit
+                    <h2 class="text-white text-[25px] font-thin py-[25px] w-[100%] text-center md:w-[70%] md:text-left">High Speed Performance</h2>
+                    <p class="font-thin text-white pr-[30px] text-center md:text-left">I'm a paragraph. Click here to add your own text and edit
                         me. It’s easy. Just click “Edit Text” or double click me to add your own content and make
                         changes to the font.</p>
-                </div>
+    </div>
     <!-- Feature 1st Section -->
     <!-- Feature 2nd Section -->
     <div x-show="shown" x-transition.duration.2000ms class="mx-6">
