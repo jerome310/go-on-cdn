@@ -122,7 +122,7 @@
             </div>
             <!-- End Left Side -->
             <!-- Start Right Side -->
-            <div x-data="{ open: false }" x-intersect="open = true" class="relative flex md:mt-0 mt-24">
+            <div x-data="{ open: false }" x-intersect="open = true" class="relative flex md:mt-0 mt-16">
                 <div class="bg-transparent">
                     <img class="max-[480px]:w-[400px] max-[480px]:h-[500px] sm:w-[462px] sm:h-[666px] md:w-[462px] md:h-[666px] border-[12px] border-black rounded-3xl"
                         src="/images/ipad mockup.jpg" alt="Go On tablet hero image">
@@ -150,7 +150,7 @@
             <h1 class="max-[480px]:text-[23px] text-[30px] md:text-[50px]">Reinventing Mobile Technology</h1>
         </div>
         <div x-show="shown" x-transition.duration.2000ms class="md:w-2/5 font-thin">
-            <h2 class="max-[480px]:text-[25px] max-[480px]:w-[85%] text-[25px] mt-[10px] text-center max-[500px]:w-3/5 md:w-4/5 m-auto md:mt-[15px] md:text-[25px] md:m-0 md:text-left lg:w-3/5">Join more than a million of happy users</h2>
+            <h2 class="max-[500px]:text-[20px] max-[480px]:w-[85%] text-[22px] mt-[10px] text-center max-[500px]:w-3/5 md:w-4/5 m-auto md:mt-[15px] md:text-[25px] md:m-0 md:text-left lg:w-3/5">Join more than a million of happy users</h2>
             <p class="max-[480px]:w-[90%] m-auto max-[500px]:w-[85%] text-center pt-5 pb-10 max-[480px]:w-[85%] md:w-[100%] md:text-left md:m-0 lg:w-[85%]">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.</p>
             <div class="text-center md:text-left">
                 <a href="/"
@@ -161,19 +161,19 @@
     </div>
     <!-- Reinventing Mobile Technology -->
     <!-- Features -->
-    <!-- <div class="relative">
+    <div x-data="{ shown: false }" x-intersect="shown = true" class="relative">
         <div>
             <img class="w-full h-[600px]" src="/images/feature_background.jpg" alt="">
         </div>
         <div class="w-[70%] m-auto">
-            <div class="pt-[75px] absolute top-0">
+            <div x-show="shown" x-transition.duration.2000ms class="pt-[75px] absolute top-0">
                 <h1 class="text-[40px] text-white pb-2.5">Features</h1>
                 <p class="font-thin text-white">I'm a title. Click here to add your own text and edit me.</p>
-            </div> -->
+            </div>
     <!-- Features Container -->
-    <!-- <div class="absolute flex justify-around w-4/5 top-[40%]"> -->
+    <div class="absolute flex justify-around w-4/5 top-[40%]">
     <!-- Feature 1st Section -->
-    <!-- <div class="mr-6">
+    <div x-show="shown" x-transition.duration.2000ms class="mr-6">
                     <svg preserveAspectRatio="none" data-bbox="30.408 36.4 139.185 127.378"
                         viewBox="30.408 36.4 139.185 127.378" height="25" width="25" xmlns="http://www.w3.org/2000/svg"
                         data-type="shape" role="presentation" aria-hidden="true" aria-labelledby="svgcid-l8guul-6i9kb8"
@@ -189,10 +189,10 @@
                     <p class="font-thin text-white pr-[30px]">I'm a paragraph. Click here to add your own text and edit
                         me. It’s easy. Just click “Edit Text” or double click me to add your own content and make
                         changes to the font.</p>
-                </div> -->
+                </div>
     <!-- Feature 1st Section -->
     <!-- Feature 2nd Section -->
-    <!-- <div class="mx-6">
+    <div x-show="shown" x-transition.duration.2000ms class="mx-6">
                     <svg preserveAspectRatio="none" data-bbox="34.4 26 131.6 140.9" viewBox="34.4 26 131.6 140.9"
                         height="25" width="25" xmlns="http://www.w3.org/2000/svg" data-type="shape" role="presentation"
                         aria-hidden="true" aria-labelledby="svgcid-rfa66w-baylml">
@@ -208,10 +208,10 @@
                     <p class="font-thin text-white pr-[30px]">I'm a paragraph. Click here to add your own text and edit
                         me. It’s easy. Just click “Edit Text” or double click me to add your own content and make
                         changes to the font.</p>
-                </div> -->
+                </div>
     <!-- Feature 2nd Section -->
     <!-- Feature 3rd Section -->
-    <!-- <div class="ml-6">
+    <div x-show="shown" x-transition.duration.2000ms class="ml-6">
                     <svg preserveAspectRatio="xMidYMid meet" data-bbox="45.175 27.575 109.45 144.775"
                         viewBox="45.175 27.575 109.45 144.775" height="25" width="25" xmlns="http://www.w3.org/2000/svg"
                         data-type="shape" role="presentation" aria-hidden="true" aria-labelledby="svgcid--7ivipd-1hyu82"
@@ -227,12 +227,12 @@
                     <p class="font-thin text-white pr-[30px]">I'm a paragraph. Click here to add your own text and edit
                         me. It’s easy. Just click “Edit Text” or double click me to add your own content and make
                         changes to the font.</p>
-                </div> -->
+                </div>
     <!-- Feature 3rd Section -->
-    <!-- </div> -->
+    </div>
     <!-- Features Container -->
-    <!-- </div>
-    </div> -->
+    </div>
+    </div>
     <!-- Features -->
     <!-- App Works Section -->
     <!-- <div class="mt-[50px] mb-[75px]">
