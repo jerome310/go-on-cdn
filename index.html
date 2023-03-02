@@ -151,7 +151,7 @@
         </div>
         <div x-show="shown" x-transition.duration.2000ms class="md:w-2/5 font-thin">
             <h2 class="max-[500px]:text-[20px] max-[480px]:w-[85%] text-[22px] mt-[10px] text-center max-[500px]:w-3/5 md:w-4/5 m-auto md:mt-[15px] md:text-[25px] md:m-0 md:text-left lg:w-3/5">Join more than a million of happy users</h2>
-            <p class="max-[480px]:w-[90%] m-auto max-[500px]:w-[85%] text-center pt-5 pb-10 max-[480px]:w-[85%] md:w-[100%] md:text-left md:m-0 lg:w-[85%]">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+            <p class="max-[480px]:w-[90%] m-auto max-[600px]:w-[85%] text-center pt-5 pb-10 max-[480px]:w-[85%] md:w-[100%] md:text-left md:m-0 lg:w-[85%]">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.</p>
             <div class="text-center md:text-left">
                 <a href="/"
                     class="border border-black px-5 py-2 rounded-md transition ease-in-out duration-300 hover:text-white hover:bg-[#3A8088] hover:border-[#3A8088]">Download
@@ -163,17 +163,17 @@
     <!-- Features -->
     <div x-data="{ shown: false }" x-intersect="shown = true" class="relative">
         <div>
-            <img class="w-full h-[1200px] md:h-[600px]" src="/images/feature_background.jpg" alt="">
+            <img class="w-full h-[1000px] md:h-[600px]" src="/images/feature_background.jpg" alt="">
         </div>
-        <div class="w-[70%] m-auto">
-            <div x-show="shown" x-transition.duration.2000ms class="pt-[75px] absolute top-0">
-                <h1 class="text-[40px] text-white pb-2.5">Features</h1>
-                <p class="font-thin text-white">I'm a title. Click here to add your own text and edit me.</p>
+        <div class="m-auto md:w-[90%] lg:w-[70%]">
+            <div x-show="shown" x-transition.duration.2000ms class="pt-[75px] absolute top-0 w-full md:w-[70%]">
+                <h1 class="text-[40px] text-white pb-2.5 text-center md:text-left">Features</h1>
+                <p class="font-thin text-white text-center px-5 md:text-left md:px-0">I'm a title. Click here to add your own text and edit me.</p>
             </div>
     <!-- Features Container -->
-    <div class="absolute justify-around bg-red-500 m-auto w-full top-[20%] md:w-4/5 md:top-[40%] md:flex">
+    <div class="absolute justify-around m-auto w-full top-[20%] md:w-[90%] md:top-[40%] md:flex lg:w-4/5">
     <!-- Feature 1st Section -->
-    <div class="mb-[75px] md:mb-[0px]" x-show="shown" x-transition.duration.2000ms class="mr-6">
+    <div class="mb-[75px] md:mb-[0px]" x-show="shown" x-transition.duration.2000ms class="md:mr-6">
                     <svg class="m-auto md:m-0" preserveAspectRatio="none" data-bbox="30.408 36.4 139.185 127.378"
                         viewBox="30.408 36.4 139.185 127.378" height="25" width="25" xmlns="http://www.w3.org/2000/svg"
                         data-type="shape" role="presentation" aria-hidden="true" aria-labelledby="svgcid-l8guul-6i9kb8"
@@ -186,14 +186,12 @@
                         </g>
                     </svg>
                     <h2 class="text-white text-[25px] font-thin py-[25px] w-[100%] text-center md:w-[70%] md:text-left">High Speed Performance</h2>
-                    <p class="font-thin text-white pr-[30px] text-center md:text-left">I'm a paragraph. Click here to add your own text and edit
-                        me. It’s easy. Just click “Edit Text” or double click me to add your own content and make
-                        changes to the font.</p>
+                    <p class="font-thin text-white text-center md:pr-[30px] md:text-left px-5 md:px-0">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.</p>
     </div>
     <!-- Feature 1st Section -->
     <!-- Feature 2nd Section -->
-    <div x-show="shown" x-transition.duration.2000ms class="mx-6">
-                    <svg preserveAspectRatio="none" data-bbox="34.4 26 131.6 140.9" viewBox="34.4 26 131.6 140.9"
+    <div class="mb-[75px] md:mb-[0px]" x-show="shown" x-transition.duration.2000ms class="md:mx-6">
+                    <svg class="m-auto md:m-0" preserveAspectRatio="none" data-bbox="34.4 26 131.6 140.9" viewBox="34.4 26 131.6 140.9"
                         height="25" width="25" xmlns="http://www.w3.org/2000/svg" data-type="shape" role="presentation"
                         aria-hidden="true" aria-labelledby="svgcid-rfa66w-baylml">
                         <title id="svgcid-rfa66w-baylml"></title>
@@ -203,16 +201,16 @@
                                 fill="white" data-color="1"></path>
                         </g>
                     </svg>
-                    <h2 class="text-white text-[25px] font-thin w-[55%] py-[25px]">24/7 Online
+                    <h2 class="text-white text-[25px] font-thin py-[25px] w-[100%] text-center md:w-[55%]">24/7 Online
                         Support</h2>
-                    <p class="font-thin text-white pr-[30px]">I'm a paragraph. Click here to add your own text and edit
+                    <p class="font-thin text-white text-center px-5 md:px-0 md:text-left md:pr-[30px]">I'm a paragraph. Click here to add your own text and edit
                         me. It’s easy. Just click “Edit Text” or double click me to add your own content and make
                         changes to the font.</p>
                 </div>
     <!-- Feature 2nd Section -->
     <!-- Feature 3rd Section -->
-    <div x-show="shown" x-transition.duration.2000ms class="ml-6">
-                    <svg preserveAspectRatio="xMidYMid meet" data-bbox="45.175 27.575 109.45 144.775"
+    <div x-show="shown" x-transition.duration.2000ms class="md:ml-6">
+                    <svg class="m-auto md:m-0" preserveAspectRatio="xMidYMid meet" data-bbox="45.175 27.575 109.45 144.775"
                         viewBox="45.175 27.575 109.45 144.775" height="25" width="25" xmlns="http://www.w3.org/2000/svg"
                         data-type="shape" role="presentation" aria-hidden="true" aria-labelledby="svgcid--7ivipd-1hyu82"
                         fill="white">
@@ -223,8 +221,8 @@
                                 fill-rule="evenodd" clip-rule="evenodd"></path>
                         </g>
                     </svg>
-                    <h2 class="text-white text-[25px] font-thin w-[70%] py-[25px]">High Speed Performance</h2>
-                    <p class="font-thin text-white pr-[30px]">I'm a paragraph. Click here to add your own text and edit
+                    <h2 class="text-white text-[25px] font-thin py-[25px] w-[100%] text-center md:w-[70%]">High Speed Performance</h2>
+                    <p class="font-thin text-white text-center px-5 md:px-0 md:pr-[30px]">I'm a paragraph. Click here to add your own text and edit
                         me. It’s easy. Just click “Edit Text” or double click me to add your own content and make
                         changes to the font.</p>
                 </div>
@@ -235,7 +233,7 @@
     </div>
     <!-- Features -->
     <!-- App Works Section -->
-    <!-- <div class="mt-[50px] mb-[75px]">
+    <div class="mt-[50px] mb-[75px]">
         <div class="w-[60%] m-auto flex">
             <div>
                 <h1 class="text-[45px]">How the App Works</h1>
@@ -263,7 +261,7 @@
                     “Edit Text” or double click me to add your own content and make changes to the font.</p>
             </div>
         </div>
-    </div> -->
+    </div>
     <!-- App Works Section -->
     <!-- Our Story -->
     <!-- <div class="relative">
