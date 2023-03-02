@@ -145,7 +145,7 @@
     </div>
     <!-- Hero section -->
     <!-- Reinventing Mobile Technology -->
-    <div x-data="{ shown: false }" x-intersect="shown = true" class="w-full md:flex justify-between md:w-3/4 m-auto mb-[5%]">
+    <div x-data="{ shown: false }" x-intersect="shown = true" class="w-full justify-between md:flex md:w-3/4 m-auto mt-[10%] mb-[15%] md:mt-0 md:mb-[5%]">
         <div x-show="shown" x-transition.duration.2000ms class="w-full text-center md:w-2/5 m-auto md:m-0 md:text-left">
             <h1 class="max-[480px]:text-[23px] text-[30px] md:text-[50px]">Reinventing Mobile Technology</h1>
         </div>
@@ -166,12 +166,12 @@
             <img class="w-full h-[1000px] md:h-[600px]" src="/images/feature_background.jpg" alt="">
         </div>
         <div class="m-auto md:w-[90%] lg:w-[70%]">
-            <div x-show="shown" x-transition.duration.2000ms class="pt-[75px] absolute top-0 w-full md:w-[70%]">
+            <div x-show="shown" x-transition.duration.5000ms class="pt-[75px] absolute top-0 w-full md:w-[70%]">
                 <h1 class="text-[40px] text-white pb-2.5 text-center md:text-left">Features</h1>
                 <p class="font-thin text-white text-center px-5 md:text-left md:px-0">I'm a title. Click here to add your own text and edit me.</p>
             </div>
     <!-- Features Container -->
-    <div class="absolute justify-around m-auto w-full top-[20%] md:w-[90%] md:top-[40%] md:flex lg:w-4/5">
+    <div x-data="{ shown: false }" x-intersect="shown = true" class="absolute justify-around m-auto w-full top-[20%] md:w-[90%] md:top-[40%] md:flex lg:w-4/5">
     <!-- Feature 1st Section -->
     <div class="mb-[75px] md:mb-[0px]" x-show="shown" x-transition.duration.2000ms class="md:mr-6">
                     <svg class="m-auto md:m-0" preserveAspectRatio="none" data-bbox="30.408 36.4 139.185 127.378"
