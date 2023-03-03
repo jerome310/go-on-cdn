@@ -262,11 +262,11 @@
     </div>
     <!-- App Works Section -->
     <!-- Our Story -->
-    <div class="relative">
+    <div x-data="{ shown: false }" x-intersect="shown = true" class="relative">
         <div>
             <img class="w-full h-[530px] md:h-[450px]" src="/images/feature_background.jpg" alt="">
         </div>
-        <div class="w-full pt-[100px] absolute top-0 lg:flex justify-center">
+        <div x-show="shown" x-transition.duration.2000ms class="w-full pt-[100px] absolute top-0 lg:flex justify-center">
             <div class="w-full text-center">
                 <h1 class="text-5xl font-light text-white">Our Story</h1>
             </div>
@@ -278,11 +278,11 @@
     </div>
     <!-- Our Story -->
     <!-- Satisfied Customers -->
-    <div class="m-auto my-20">
-        <h1 class="pl-[18%] text-5xl w-1/4 pb-[75px] leading-normal">Satisfied Customers</h1>
-        <div class="flex justify-between w-[65%] m-auto">
+    <div x-data="{ shown: false }" x-intersect="shown = true" class="m-auto my-20">
+        <h1 x-show="shown" x-transition.duration.2000ms class="pb-[75px] leading-normal text-center text-3xl md:pl-[18%] md:text-left md:w-1/4 md:text-5xl">Satisfied Customers</h1>
+        <div class="max-[480px]:w-[88%] min-[500px]:w-[65%] m-auto md:flex md:justify-between">
     <!-- First Card -->
-    <div class="w-[25%]">
+    <div x-show="shown" x-transition.duration.2000ms class="w-[25%] mb-12 md:m-0">
                 <div class="shadow-[0_8px_24px_rgba(149,157,165,0.2)] w-[325px] h-[300px] rounded-3xl">
                     <svg preserveAspectRatio="xMidYMid meet" data-bbox="20.799 31.376 158.401 137.248"
                         xmlns="http://www.w3.org/2000/svg" width="55" height="70"
@@ -360,7 +360,7 @@
             </div>
     <!-- First Card Ending -->
     <!-- Second Card -->
-    <div class="w-[25%]">
+    <div x-show="shown" x-transition.duration.2000ms class="w-[25%] mb-12 md:m-0">
                 <div class="shadow-[0_8px_24px_rgba(149,157,165,0.2)] w-[325px] h-[300px] rounded-3xl">
                     <svg preserveAspectRatio="xMidYMid meet" data-bbox="20.799 31.376 158.401 137.248"
                         xmlns="http://www.w3.org/2000/svg" width="55" height="70"
@@ -438,7 +438,7 @@
             </div>
     <!-- Second Card Ending -->
     <!-- Third Card -->
-    <div class="w-[25%]">
+    <div x-show="shown" x-transition.duration.2000ms class="w-[25%]">
                 <div class="shadow-[0_8px_24px_rgba(149,157,165,0.2)] w-[325px] h-[300px] rounded-3xl">
                     <svg preserveAspectRatio="xMidYMid meet" data-bbox="20.799 31.376 158.401 137.248"
                         xmlns="http://www.w3.org/2000/svg" width="55" height="70"
@@ -515,8 +515,8 @@
                 </div>
             </div>
     <!-- Third Card Ending -->
-    <!-- </div>
-    </div> -->
+    </div>
+    </div>
     <!-- Satisfied Customers -->
     <!-- Email Section -->
     <!-- Build after the whole website is responsive and done -->
