@@ -163,7 +163,7 @@
     <!-- Features -->
     <div x-data="{ shown: false }" x-intersect="shown = true" class="relative">
         <div>
-            <img class="w-full h-[1000px] md:h-[600px]" src="/images/feature_background.jpg" alt="">
+            <img class="w-full h-[1150px] md:h-[600px]" src="/images/feature_background.jpg" alt="">
         </div>
         <div class="m-auto md:w-[90%] lg:w-[70%]">
             <div x-show="shown" x-transition.duration.5000ms class="pt-[75px] absolute top-0 w-full md:w-[70%]">
@@ -173,7 +173,7 @@
     <!-- Features Container -->
     <div x-data="{ shown: false }" x-intersect="shown = true" class="absolute justify-around m-auto w-full top-[20%] md:w-[90%] md:top-[40%] md:flex lg:w-4/5">
     <!-- Feature 1st Section -->
-    <div class="mb-[75px] md:mb-[0px]" x-show="shown" x-transition.duration.2000ms class="md:mr-6">
+    <div class="max-[600px]:mt-[50px] mb-[75px] md:mb-[0px]" x-show="shown" x-transition.duration.2000ms class="md:mr-6">
                     <svg class="m-auto md:m-0" preserveAspectRatio="none" data-bbox="30.408 36.4 139.185 127.378"
                         viewBox="30.408 36.4 139.185 127.378" height="25" width="25" xmlns="http://www.w3.org/2000/svg"
                         data-type="shape" role="presentation" aria-hidden="true" aria-labelledby="svgcid-l8guul-6i9kb8"
@@ -233,32 +233,30 @@
     </div>
     <!-- Features -->
     <!-- App Works Section -->
-    <div class="mt-[50px] mb-[75px]">
-        <div class="w-[60%] m-auto flex">
+    <div x-data="{ shown: false }" x-intersect="shown = true" class="mt-[50px] mb-[75px]">
+        <div x-show="shown" x-transition.duration.2000ms class="md:w-[80%] m-auto md:flex lg:w-[70%]">
             <div>
-                <h1 class="text-[45px]">How the App Works</h1>
-                <p class="pt-10 text-lg font-thin">/01</p>
-                <h2 class="text-[25px] font-thin py-4">Personalized Experience</h2>
-                <p class="font-thin w-[50%]">I'm a paragraph. Click here to add your own text and edit me. It’s easy.
-                    Just click “Edit Text” or double click me to add your own content and make changes to the font.</p>
+                <h1 class="text-center max-[600px]:text-[30px] max-[640px]:text-[35px] sm:text-[35px] md:text-left md:text-[35px] lg:text-[45px]">How the App Works</h1>
+                <p class="pt-10 text-lg font-thin text-center md:text-left">/01</p>
+                <h2 class="text-[25px] font-thin py-4 text-center md:text-left">Personalized Experience</h2>
+                <p class="font-thin text-center pb-[50px] px-9 md:pb-[0px] md:px-0 md:w-3/4 md:text-left lg:w-2/4">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.</p>
             </div>
-            <div>
-                <img class="w-[350px] h-[450px] rounded-3xl border-[12px] border-black"
+            <div class="max-[600px]:m-auto max-[600px]:w-[100%] md:w-[100%] lg:w-[50%]">
+                <img class="max-[600px]:w-[250px] max-[600px]:h-[450px] m-auto md:m-0 md:w-[600px] md:h-[450px] rounded-3xl border-[12px] border-black lg:w-[250px] lg:h-[450px]"
                     src="/images/phone_mockup_two.jpg" alt="phone phone mockup two">
             </div>
         </div>
 
-        <div class="mt-[6%] w-[70%] m-auto flex justify-between">
-            <div class="w-[75%]">
-                <img class="w-[500px] h-[262px] rounded-3xl border-[12px] border-black" src="/images/tablet_two.jpg"
+        <div x-show="shown" x-transition.duration.5000ms class="m-auto justify-between mt-[40%] md:mt-[6%] md:flex md:w-[80%] lg:w-[70%]">
+            <div class="w-[90%] m-auto md:w-[100%] lg:w-[75%]">
+                <img class="max-[480px]:w-[300px] max-[480px]:h-[200px] w-[400px] h-[262px]  md:w-[350px] md:h-[200px] max-[766px]:m-auto lg:w-[500px] lg:h-[262px] lg:m-0 rounded-3xl border-[12px] border-black" src="/images/tablet_two.jpg"
                     alt="tablet mockup design">
             </div>
-            <div class="w-[30%]">
-                <p class="text-lg font-thin">/02</p>
+            <div class="text-center md:w-[60%] md:text-left lg:w-[35%]">
+                <p class="text-lg font-thin pt-5 md:pt-0">/02</p>
                 <h2 class="text-[25px] font-thin py-4">Cloud Based
                     Technology</h2>
-                <p class="font-thin">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click
-                    “Edit Text” or double click me to add your own content and make changes to the font.</p>
+                <p class="font-thin px-9 md:px-0">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.</p>
             </div>
         </div>
     </div>
